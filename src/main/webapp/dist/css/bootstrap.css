@@ -28,10 +28,10 @@
   --dark: #343a40;
   --breakpoint-xs: 0;
   --breakpoint-sm: 768px;
-  --breakpoint-md: 1024px;
-  --breakpoint-lg: 1400px;
+  --breakpoint-md: 1200px;
+  --breakpoint-lg: 1520px;
   --breakpoint-xl: 1850px;
-  --breakpoint-xxl: 2200px;
+  --breakpoint-xxl: 2400px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -562,15 +562,15 @@ pre code {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .container {
-    max-width: 980px;
+    max-width: 1150px;
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1520px) {
   .container {
-    max-width: 1320px;
+    max-width: 1480px;
   }
 }
 
@@ -580,9 +580,9 @@ pre code {
   }
 }
 
-@media (min-width: 2200px) {
+@media (min-width: 2400px) {
   .container {
-    max-width: 2050px;
+    max-width: 2350px;
   }
 }
 
@@ -1006,7 +1006,7 @@ pre code {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .col-md {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -1178,7 +1178,7 @@ pre code {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1520px) {
   .col-lg {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -1522,7 +1522,7 @@ pre code {
   }
 }
 
-@media (min-width: 2200px) {
+@media (min-width: 2400px) {
   .col-xxl {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -1937,7 +1937,7 @@ pre code {
   }
 }
 
-@media (max-width: 1023.98px) {
+@media (max-width: 1199.98px) {
   .table-responsive-md {
     display: block;
     width: 100%;
@@ -1950,7 +1950,7 @@ pre code {
   }
 }
 
-@media (max-width: 1399.98px) {
+@media (max-width: 1519.98px) {
   .table-responsive-lg {
     display: block;
     width: 100%;
@@ -1976,7 +1976,7 @@ pre code {
   }
 }
 
-@media (max-width: 2199.98px) {
+@media (max-width: 2399.98px) {
   .table-responsive-xxl {
     display: block;
     width: 100%;
@@ -4295,7 +4295,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (max-width: 1023.98px) {
+@media (max-width: 1199.98px) {
   .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid {
     padding-right: 0;
@@ -4303,7 +4303,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .navbar-expand-md {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
@@ -4337,7 +4337,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (max-width: 1399.98px) {
+@media (max-width: 1519.98px) {
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
@@ -4345,7 +4345,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1520px) {
   .navbar-expand-lg {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
@@ -4421,7 +4421,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (max-width: 2199.98px) {
+@media (max-width: 2399.98px) {
   .navbar-expand-xxl > .container,
   .navbar-expand-xxl > .container-fluid {
     padding-right: 0;
@@ -4429,7 +4429,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 2200px) {
+@media (min-width: 2400px) {
   .navbar-expand-xxl {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
@@ -5740,7 +5740,7 @@ button.close {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1520px) {
   .modal-lg {
     max-width: 800px;
   }
@@ -6579,7 +6579,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .d-md-none {
     display: none !important;
   }
@@ -6611,7 +6611,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1520px) {
   .d-lg-none {
     display: none !important;
   }
@@ -6675,7 +6675,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 2200px) {
+@media (min-width: 2400px) {
   .d-xxl-none {
     display: none !important;
   }
@@ -7091,7 +7091,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .flex-md-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -7230,7 +7230,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1520px) {
   .flex-lg-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -7508,7 +7508,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 2200px) {
+@media (min-width: 2400px) {
   .flex-xxl-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -7671,7 +7671,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .float-md-left {
     float: left !important;
   }
@@ -7683,7 +7683,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1520px) {
   .float-lg-left {
     float: left !important;
   }
@@ -7707,7 +7707,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 2200px) {
+@media (min-width: 2400px) {
   .float-xxl-left {
     float: left !important;
   }
@@ -8411,7 +8411,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .m-md-0 {
     margin: 0 !important;
   }
@@ -8661,7 +8661,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1520px) {
   .m-lg-0 {
     margin: 0 !important;
   }
@@ -9161,7 +9161,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 2200px) {
+@media (min-width: 2400px) {
   .m-xxl-0 {
     margin: 0 !important;
   }
@@ -9453,7 +9453,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .text-md-left {
     text-align: left !important;
   }
@@ -9465,7 +9465,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1520px) {
   .text-lg-left {
     text-align: left !important;
   }
@@ -9489,7 +9489,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 2200px) {
+@media (min-width: 2400px) {
   .text-xxl-left {
     text-align: left !important;
   }
@@ -9671,10 +9671,10 @@ a.text-dark:hover, a.text-dark:focus {
     size: a3;
   }
   body {
-    min-width: 1400px !important;
+    min-width: 1520px !important;
   }
   .container {
-    min-width: 1400px !important;
+    min-width: 1520px !important;
   }
   .navbar {
     display: none;
