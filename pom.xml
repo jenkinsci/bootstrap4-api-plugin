@@ -18,6 +18,8 @@
 
   <properties>
     <bootstrap.version>4.1.3</bootstrap.version>
+    <jquery3-api.version>3.4.1-SNAPSHOT</jquery3-api.version>
+    <popper-api.version>1.15.0-SNAPSHOT</popper-api.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <jenkins.version>2.138.4</jenkins.version>
@@ -89,12 +91,12 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>popper-api</artifactId>
-      <version>0.1.0-SNAPSHOT</version>
+      <version>${popper-api.version}</version>
     </dependency>
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>jquery3-api</artifactId>
-      <version>0.1.0-SNAPSHOT</version>
+      <version>${jquery3-api.version}</version>
     </dependency>
 
     <!-- Test Dependencies -->
