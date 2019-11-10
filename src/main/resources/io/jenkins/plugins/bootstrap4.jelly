@@ -7,9 +7,9 @@ Use it like <st:adjunct includes="io.jenkins.plugins.bootstrap4"/>
   <st:adjunct includes="io.jenkins.plugins.jquery3"/>
   <st:adjunct includes="io.jenkins.plugins.popper"/>
 
-  <link rel="stylesheet" href="${resURL}/plugin/bootstrap4-api/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="${resURL}/plugin/bootstrap4-api/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="${resURL}/css/style.css"/>
 
-  <script type="text/javascript" src="${resURL}/plugin/bootstrap4-api/dist/js/bootstrap.min.js"/>
+  <script type="text/javascript" src="${resURL}/plugin/bootstrap4-api/js/bootstrap.min.js"/>
 
 </j:jelly>
