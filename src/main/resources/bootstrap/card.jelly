@@ -15,13 +15,16 @@
     <st:attribute name="fontAwesomeIcon" use="optional" type="String">
       A Font Awesome icon to be shown on the top right corner, e.g. 'fa-check-double'.
     </st:attribute>
+    <st:attribute name="cardClass" use="optional" type="String">
+      Additional classes to be applied to the card.
+    </st:attribute>
 
   </st:documentation>
 
   <st:adjunct includes="io.jenkins.plugins.bootstrap4"/>
   <st:adjunct includes="io.jenkins.plugins.font-awesome"/>
 
-  <div class="card">
+  <div class="card ${cardClass}">
     <div class="card-body">
       <h5 class="card-title">
         ${title}
