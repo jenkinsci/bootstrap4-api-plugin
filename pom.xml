@@ -20,8 +20,8 @@
     <revision>4.1.3-1-beta3</revision>
     <changelist>-SNAPSHOT</changelist>
     <bootstrap.version>4.3.1</bootstrap.version>
-    <jquery3-api.version>3.4.1-1-beta2-rc50.8da72a422c78</jquery3-api.version>
-    <popper-api.version>1.15.0-1-beta2-rc48.30b1b9dd283f</popper-api.version>
+    <jquery3-api.version>3.4.1-1-beta2-rc52.da76aa84ddb7</jquery3-api.version>
+    <popper-api.version>1.15.0-1-beta2-rc50.5cd401532679</popper-api.version>
     <font-awesome-api.version>5.10.1-1-beta1</font-awesome-api.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
