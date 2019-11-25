@@ -20,8 +20,8 @@
     <revision>4.1.3-1-beta3</revision>
     <changelist>-SNAPSHOT</changelist>
     <bootstrap.version>4.3.1</bootstrap.version>
-    <jquery3-api.version>3.4.1-1-beta2-rc52.da76aa84ddb7</jquery3-api.version>
-    <popper-api.version>1.15.0-1-beta2-rc50.5cd401532679</popper-api.version>
+    <jquery3-api.version>3.4.1-1-beta2-rc53.c40ba34317aa</jquery3-api.version>
+    <popper-api.version>1.15.0-1-beta2-rc51.e8041cb70da1</popper-api.version>
     <font-awesome-api.version>5.10.1-1-beta1</font-awesome-api.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -499,6 +499,10 @@
     <repository>
       <id>repo.jenkins-ci.org</id>
       <url>https://repo.jenkins-ci.org/public/</url>
+    </repository>
+    <repository>
+      <id>incrementals.jenkins-ci.org</id>
+      <url>https://repo.jenkins-ci.org/incrementals/</url>
     </repository>
   </repositories>
 
