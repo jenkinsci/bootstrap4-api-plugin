@@ -21,7 +21,7 @@
     <changelist>-SNAPSHOT</changelist>
     <bootstrap.version>4.3.1</bootstrap.version>
     <jquery3-api.version>3.4.1-1-beta2-rc53.c40ba34317aa</jquery3-api.version>
-    <popper-api.version>1.15.0-1-beta2-rc51.e8041cb70da1</popper-api.version>
+    <popper-api.version>1.15.0-1-SNAPSHOT</popper-api.version>
     <font-awesome-api.version>5.10.1-1-beta1</font-awesome-api.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
