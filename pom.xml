@@ -19,7 +19,7 @@
   <properties>
     <revision>4.4.1-1-beta1</revision>
     <changelist>-SNAPSHOT</changelist>
-    <bootstrap.version>4.3.1</bootstrap.version>
+    <bootstrap.version>4.4.1</bootstrap.version>
     <jquery3-api.version>3.4.1-2-beta1</jquery3-api.version>
     <popper-api.version>1.15.0-2-beta1</popper-api.version>
     <font-awesome-api.version>5.10.1-1-beta1</font-awesome-api.version>
