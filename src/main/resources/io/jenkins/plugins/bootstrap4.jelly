@@ -15,5 +15,6 @@ Use it like <st:adjunct includes="io.jenkins.plugins.bootstrap4"/>
   <link type="text/css" rel="stylesheet" href="${resURL}/css/style.css"/>
 
   <script type="text/javascript" src="${resURL}/plugin/bootstrap4-api/js/bootstrap.min.js"/>
+  <script type="text/javascript" src="${resURL}/plugin/bootstrap4-api/js/no-prototype.js"/>
 
 </j:jelly>
