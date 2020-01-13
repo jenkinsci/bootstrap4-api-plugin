@@ -3,11 +3,11 @@
 /* ------------------------------------------------------------------------------------------------------------------- */
 
 .carousel-control-prev {
-    width: 5%;
+    width: 20px;
 }
 
 .carousel-control-next {
-    width: 5%;
+    width: 20px;
 }
 
 .carousel-control-prev-icon {
@@ -22,11 +22,15 @@
 /* Font awesome icons float right                                                                                      */
 /* ------------------------------------------------------------------------------------------------------------------- */
 
+.card-title {
+    margin-bottom: 1rem;
+}
+
 .icon-right {
-    font-family: "Font Awesome 5 Free";
     float: right;
-    color: #b4b4b4;
-    font-weight: 900;
+    fill: #b4b4b4;
+    height: 48px;
+    width: 48px;
     position: absolute;
     right: 25px;
     top: 10px;

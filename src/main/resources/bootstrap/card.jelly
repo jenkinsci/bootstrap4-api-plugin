@@ -1,5 +1,5 @@
 <?jelly escape-by-default='true'?>
-<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define">
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:fa="/font-awesome">
   <st:documentation>
     Renders a Bootstrap card.
 
@@ -13,27 +13,26 @@
       ]]>
     </st:attribute>
     <st:attribute name="fontAwesomeIcon" use="optional" type="String">
-      A Font Awesome icon to be shown on the top right corner, e.g. 'fa-check-double'.
+      A Font Awesome SVG icon to be shown at the top right corner, e.g. 'chevron-circle-up'.
     </st:attribute>
-    <st:attribute name="cardClass" use="optional" type="String">
+    <st:attribute name="class" use="optional" type="String">
       Additional classes to be applied to the card.
     </st:attribute>
 
   </st:documentation>
 
   <st:adjunct includes="io.jenkins.plugins.bootstrap4"/>
-  <st:adjunct includes="io.jenkins.plugins.font-awesome"/>
 
-  <div class="card ${cardClass}">
+  <div class="card ${class}">
     <div class="card-body">
       <h5 class="card-title">
         ${title}
 
         <j:if test="${pngIcon!=null}">
-          <img class="icon-right" src="${pngIcon}"/>
+          <img src="${pngIcon}" class="icon-right"/>
         </j:if>
         <j:if test="${fontAwesomeIcon!=null}">
-          <i class="fa ${fontAwesomeIcon} icon-right fa-2x" aria-hidden="true"/>
+          <fa:svg-icon name="${fontAwesomeIcon}" class="icon-right"/>
         </j:if>
 
       </h5>
