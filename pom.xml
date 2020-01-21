@@ -14,6 +14,8 @@
   <name>Bootstrap 4 API Plugin</name>
   <version>${revision}${changelist}</version>
 
+  <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+
   <description>Jenkins plug-in that provides Bootstrap 4.</description>
 
   <properties>
