@@ -27,7 +27,7 @@
 
     <jquery3-api.version>3.4.1-5-beta1</jquery3-api.version>
     <popper-api.version>1.16.0-2-beta1</popper-api.version>
-    <font-awesome-api.version>5.12.0-3-beta1</font-awesome-api.version>
+    <font-awesome-api.version>5.12.0-4-beta1-rc105.82ca31ce671b</font-awesome-api.version>
 
     <commons.lang.version>3.9</commons.lang.version>
 
