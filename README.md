@@ -1,11 +1,9 @@
 # Bootstrap 4 Jenkins Plugin
 
+[![Jenkins Plugin](https://img.shields.io/jenkins/plugin/v/bootstrap4-api.svg?label=latest%20version)](https://plugins.jenkins.io/bootstrap4-api)
 [![Jenkins Version](https://img.shields.io/badge/Jenkins-2.138.4-green.svg?label=min.%20Jenkins)](https://jenkins.io/download/)
 ![JDK8](https://img.shields.io/badge/jdk-8-yellow.svg?label=min.%20JDK)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Jenkins](https://ci.jenkins.io/job/Plugins/job/bootstrap4-api-plugin/job/master/badge/icon)](https://ci.jenkins.io/job/Plugins/job/bootstrap4-api-plugin/job/master/)
-[![GitHub Actions](https://github.com/jenkinsci/bootstrap4-api-plugin/workflows/GitHub%20Actions/badge.svg)](https://github.com/jenkinsci/bootstrap4-api-plugin/actions)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/jenkinsci/bootstrap4-api-plugin.svg)](https://github.com/jenkinsci/bootstrap4-api-plugin/pulls)
 
 Provides [Bootstrap 4](https://getbootstrap.com/) for Jenkins Plugins.
 
@@ -88,3 +86,6 @@ You can see the available breakpoints by including the following HTML snippet in
     <span class="badge badge-dark d-inline d-sm-none">xs</span>
 </div>
 ```
+[![Jenkins](https://ci.jenkins.io/job/Plugins/job/bootstrap4-api-plugin/job/master/badge/icon)](https://ci.jenkins.io/job/Plugins/job/bootstrap4-api-plugin/job/master/)
+[![GitHub Actions](https://github.com/jenkinsci/bootstrap4-api-plugin/workflows/GitHub%20Actions/badge.svg)](https://github.com/jenkinsci/bootstrap4-api-plugin/actions)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/jenkinsci/bootstrap4-api-plugin.svg)](https://github.com/jenkinsci/bootstrap4-api-plugin/pulls)
