@@ -16,7 +16,7 @@
 
   <url>https://github.com/jenkinsci/bootstrap4-api-plugin</url>
 
-  <description>Jenkins plug-in that provides Bootstrap 4.</description>
+  <description>Provides Bootstrap 4 for Jenkins plugins.</description>
 
   <properties>
     <revision>4.4.1-11</revision>
