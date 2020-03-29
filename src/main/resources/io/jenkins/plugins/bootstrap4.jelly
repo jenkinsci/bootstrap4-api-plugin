@@ -12,9 +12,17 @@ Use it like <st:adjunct includes="io.jenkins.plugins.bootstrap4"/>
 
   <link type="text/css" rel="stylesheet" href="${resURL}/plugin/bootstrap4-api/css/bootstrap.min.css"/>
   <link type="text/css" rel="stylesheet" href="${resURL}/plugin/bootstrap4-api/css/jenkins-style.css"/>
-  <link type="text/css" rel="stylesheet" href="${resURL}/css/style.css"/>
+
+  <j:set var="versionParts" value="${h.version.split('\.',3)}" />
+  <j:set var="majorVersion" value="${versionParts[0]}" />
+  <j:set var="minorVersion" value="${versionParts[1]}" />
+
+  <j:if test="${majorVersion == 2 and minorVersion &lt; 222}">
+    <link type="text/css" rel="stylesheet" href="${resURL}/css/style.css"/>
+  </j:if>
 
   <script type="text/javascript" src="${resURL}/plugin/bootstrap4-api/js/bootstrap.min.js"/>
   <script type="text/javascript" src="${resURL}/plugin/bootstrap4-api/js/no-prototype.js"/>
 
 </j:jelly>
+
