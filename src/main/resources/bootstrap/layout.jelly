@@ -63,7 +63,7 @@ THE SOFTWARE.
   <j:set var="majorVersion" value="${versionParts[0]}" />
   <j:set var="minorVersion" value="${versionParts[1].replace('-SNAPSHOT', '')}" />
   <j:choose>
-    <j:when test="${majorVersion > 2 and minorVersion > 234}">
+    <j:when test="${(majorVersion > 1 and minorVersion > 234) or majorVersion > 2}">
       <l:layout title="${title}" permission="${permission}" type="${type}" nogrid="true">
         <d:invokeBody/>
       </l:layout>
