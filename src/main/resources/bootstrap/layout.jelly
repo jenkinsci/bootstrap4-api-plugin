@@ -59,16 +59,17 @@ THE SOFTWARE.
   <j:new var="h" className="hudson.Functions" /><!-- instead of JSP functions -->
   ${h.initPageVariables(context)}
 
-  <j:set var="versionParts" value="${h.version.split('\.',3)}" />
+  <j:set var="versionParts" value="${h.version.split('\.')}" />
   <j:set var="majorVersion" value="${versionParts[0]}" />
-  <j:set var="minorVersion" value="${versionParts[1].replace('-SNAPSHOT', '')}" />
+  <j:set var="rawMinorVersion" value="${versionParts[1].split('-')}" />
+  <j:set var="minorVersion" value="${rawMinorVersion[0]}" />
   <j:choose>
-    <j:when test="${(majorVersion > 1 and minorVersion > 234) or majorVersion > 2}">
+    <j:when test="${(majorVersion ge 2 and minorVersion ge 235) or majorVersion > 2}">
       <l:layout title="${title}" permission="${permission}" type="${type}" nogrid="true">
         <d:invokeBody/>
       </l:layout>
     </j:when>
-    <j:when test="${majorVersion > 2 or minorVersion > 221}">
+    <j:when test="${minorVersion ge 222}">
       <bs:layout-post-2.222 title="${title}" permission="${permission}" type="${type}">
         <d:invokeBody/>
       </bs:layout-post-2.222>
