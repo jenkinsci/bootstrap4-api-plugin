@@ -1,7 +1,7 @@
 /*!
- * Bootstrap Grid v4.4.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
+ * Bootstrap Grid v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 html {
@@ -41,15 +41,15 @@ html {
   }
 }
 
-@media (min-width: 1850px) {
+@media (min-width: 1750px) {
   .container {
-    max-width: 1750px;
+    max-width: 1700px;
   }
 }
 
-@media (min-width: 2400px) {
+@media (min-width: 2300px) {
   .container {
-    max-width: 2350px;
+    max-width: 2250px;
   }
 }
 
@@ -79,15 +79,15 @@ html {
   }
 }
 
-@media (min-width: 1850px) {
+@media (min-width: 1750px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1750px;
+    max-width: 1700px;
   }
 }
 
-@media (min-width: 2400px) {
+@media (min-width: 2300px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 2350px;
+    max-width: 2250px;
   }
 }
 
@@ -129,6 +129,7 @@ html {
   flex-basis: 0;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  min-width: 0;
   max-width: 100%;
 }
 
@@ -372,6 +373,7 @@ html {
     flex-basis: 0;
     -ms-flex-positive: 1;
     flex-grow: 1;
+    min-width: 0;
     max-width: 100%;
   }
   .row-cols-sm-1 > * {
@@ -574,6 +576,7 @@ html {
     flex-basis: 0;
     -ms-flex-positive: 1;
     flex-grow: 1;
+    min-width: 0;
     max-width: 100%;
   }
   .row-cols-md-1 > * {
@@ -776,6 +779,7 @@ html {
     flex-basis: 0;
     -ms-flex-positive: 1;
     flex-grow: 1;
+    min-width: 0;
     max-width: 100%;
   }
   .row-cols-lg-1 > * {
@@ -972,12 +976,13 @@ html {
   }
 }
 
-@media (min-width: 1850px) {
+@media (min-width: 1750px) {
   .col-xl {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -ms-flex-positive: 1;
     flex-grow: 1;
+    min-width: 0;
     max-width: 100%;
   }
   .row-cols-xl-1 > * {
@@ -1174,12 +1179,13 @@ html {
   }
 }
 
-@media (min-width: 2400px) {
+@media (min-width: 2300px) {
   .col-xxl {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -ms-flex-positive: 1;
     flex-grow: 1;
+    min-width: 0;
     max-width: 100%;
   }
   .row-cols-xxl-1 > * {
@@ -1510,7 +1516,7 @@ html {
   }
 }
 
-@media (min-width: 1850px) {
+@media (min-width: 1750px) {
   .d-xl-none {
     display: none !important;
   }
@@ -1542,7 +1548,7 @@ html {
   }
 }
 
-@media (min-width: 2400px) {
+@media (min-width: 2300px) {
   .d-xxl-none {
     display: none !important;
   }
@@ -2193,7 +2199,7 @@ html {
   }
 }
 
-@media (min-width: 1850px) {
+@media (min-width: 1750px) {
   .flex-xl-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -2332,7 +2338,7 @@ html {
   }
 }
 
-@media (min-width: 2400px) {
+@media (min-width: 2300px) {
   .flex-xxl-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -3938,7 +3944,7 @@ html {
   }
 }
 
-@media (min-width: 1850px) {
+@media (min-width: 1750px) {
   .m-xl-0 {
     margin: 0 !important;
   }
@@ -4283,7 +4289,7 @@ html {
   }
 }
 
-@media (min-width: 2400px) {
+@media (min-width: 2300px) {
   .m-xxl-0 {
     margin: 0 !important;
   }
