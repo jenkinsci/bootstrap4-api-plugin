@@ -25,7 +25,7 @@
 
     <module.name>${project.groupId}.bootstrap4</module.name>
 
-    <jquery3-api.version>3.4.1-10</jquery3-api.version>
+    <jquery3-api.version>3.5.1-1</jquery3-api.version>
     <popper-api.version>1.16.0-6</popper-api.version>
     <font-awesome-api.version>5.13.0-1</font-awesome-api.version>
 
