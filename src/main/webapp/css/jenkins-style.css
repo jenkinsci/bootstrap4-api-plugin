@@ -48,8 +48,7 @@ body {
 
 .card {
     background-color: #fff;
-    background-color: var(--background);
-    border: var(--input-border);
+    color: var(--text-color);
 }
 
 .card-title {
