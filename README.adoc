@@ -58,10 +58,9 @@ $container-max-widths: (
 Since the plugin contains a modified bootstrap release, you need to build the release manually using the following steps:
 
 1. Download the latest release
-2. Unpack the release into a temporary folder
-3. Change the breakpoints in the file `_variables.scss`
-4. Build the Bootstrap release using `npm run dist` 
-5. Overwrite the release files in `src/webapp/dist` with the new files
+2. (Optional) change the variables in etc/bootstrap-custom-build.scss
+3. Build the Bootstrap custom builds by running `npm install` followed by `npm run build`
+4. Overwrite the release files in `src/webapp/dist` with the new files
 
 == Visualizing the media breakpoints
 
