@@ -21,7 +21,7 @@
   <properties>
     <revision>4.5.0-3</revision>
     <changelist>-SNAPSHOT</changelist>
-    <bootstrap.version>4.5.0</bootstrap.version>
+    <bootstrap.version>4.5.2</bootstrap.version>
 
     <module.name>${project.groupId}.bootstrap4</module.name>
 
