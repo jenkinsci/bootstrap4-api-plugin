@@ -6,7 +6,7 @@
     "doc": "doc"
   },
   "dependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.5.2",
     "remark-cli": "^6.0.1",
     "remark-lint": "^6.0.5",
     "remark-preset-lint-recommended": "^3.0.2"
@@ -15,7 +15,7 @@
     "node-sass": "^4.14.1"
   },
   "scripts": {
-    "build": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 etc -o src/main/webapp/css",
+    "build": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 etc -o target/bootstrap4-api/css",
     "lint-md": "remark ."
   },
   "remarkConfig": {
