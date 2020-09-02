@@ -25,7 +25,7 @@
 
   <div class="card ${class}">
     <div class="card-body">
-      <h5 class="card-title">
+      <div class="card-title">
         ${title}
 
         <j:if test="${pngIcon!=null}">
@@ -35,7 +35,7 @@
           <fa:svg-icon name="${fontAwesomeIcon}" class="icon-right"/>
         </j:if>
 
-      </h5>
+      </div>
       <d:invokeBody/>
     </div>
   </div>
