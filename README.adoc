@@ -15,52 +15,10 @@ an open source toolkit for developing with HTML, CSS, and JS. Developers can qui
 build entire apps with their Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins
 built on jQuery.
 
-This plugin contains the latest https://www.webjars.org[WebJars] release and corresponding Jenkins UI elements.
-Note that the Bootstrap release has been adapted with the following media breakpoints that better match the typical
-Jenkins screen resolutions:
-
-[source,scss]
-----
-// Grid breakpoints
-//
-// Define the minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 768px,
-  md: 1200px,
-  lg: 1520px,
-  xl: 1850px,
-  xxl: 2400px,
-) !default;
-
-@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
-@include _assert-starts-at-zero($grid-breakpoints);
-
-
-// Grid containers
-//
-// Define the maximum width of `.container` for different screen sizes.
-
-$container-max-widths: (
-  sm: 720px,
-  md: 1150px,
-  lg: 1480px,
-  xl: 1750px,
-  xxl: 2350px,
-) !default;
-
-----
-
-== How to build the plugin
-
-Since the plugin contains a modified bootstrap release, you need to build the release manually using the following steps:
-
-1. Download the latest release
-2. (Optional) change the variables in etc/bootstrap-custom-build.scss
-3. Build the Bootstrap custom builds by running `npm install` followed by `npm run build`
-4. Overwrite the release files in `src/webapp/dist` with the new files
+This plugin bundles the latest release and corresponding Jenkins UI elements.
+Note that the Bootstrap release build has been adapted to integrate well with the existing Jenkins styles. For
+more details please see `bootstrap-custom-build.scss`. The build process uses `npm` to actually rebuild Bootstrap from
+sources and `maven` to bundle everything as a Jenkins plugin.
 
 == Visualizing the media breakpoints
 
