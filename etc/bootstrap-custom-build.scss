@@ -4,27 +4,20 @@
 
 /* set the overriding variables */
 $grid-breakpoints: (
-  xxxs: 0,
-  xxs: 320px,
-  xs: 568px,
-  sm: 667px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1440px,
-  xxxl: 1600px
+  xs: 0,
+  sm: 768px,
+  md: 1200px,
+  lg: 1520px,
+  xl: 1850px,
+  xxl: 2400px,
 ) !default;
 
 $container-max-widths: (
-  xxxs: 0,
-  xxs: 320px,
-  xs: 568px,
-  sm: 667px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1440px,
-  xxxl: 1600px
+  sm: 720px,
+  md: 1150px,
+  lg: 1480px,
+  xl: 1750px,
+  xxl: 2350px,
 ) !default;
 
 /* override the !default vars with the values we set above */
