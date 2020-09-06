@@ -1,24 +1,25 @@
 @import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
 
 /* set the overriding variables */
 $grid-breakpoints: (
-  xs: 0,
-  sm: 768px,
-  md: 1200px,
-  lg: 1520px,
-  xl: 1850px,
-  xxl: 2400px,
+        xs: 0,
+        sm: 768px,
+        md: 1200px,
+        lg: 1520px,
+        xl: 1750px,
+        xxl: 2300px,
 ) !default;
 
 $container-max-widths: (
-  sm: 720px,
-  md: 1150px,
-  lg: 1480px,
-  xl: 1750px,
-  xxl: 2350px,
+        sm: 720px,
+        md: 1150px,
+        lg: 1480px,
+        xl: 1700px,
+        xxl: 2250px,
 ) !default;
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
 /* override the !default vars with the values we set above */
 
