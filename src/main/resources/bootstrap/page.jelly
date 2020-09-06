@@ -6,9 +6,11 @@
     <st:attribute name="it" use="required">
       Owner of the page.
     </st:attribute>
+    <st:attribute name="notitle" use="optional">
+      Hide the title on top of the page.
+    </st:attribute>
   </st:documentation>
 
-  <st:adjunct includes="io.jenkins.plugins.bootstrap4"/>
 
   <bs:layout title="${it.displayName}" norefresh="true">
 
@@ -16,9 +18,13 @@
 
     <l:main-panel>
 
+      <st:adjunct includes="io.jenkins.plugins.bootstrap4"/>
+
       <div class="fluid-container">
 
-        <h1>${title}</h1>
+        <j:if test="${notitle == null}">
+          <h1>${title}</h1>
+        </j:if>
 
         <d:invokeBody/>
 
