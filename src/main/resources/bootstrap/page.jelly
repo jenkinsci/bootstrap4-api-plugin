@@ -1,0 +1,35 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:d="jelly:define" xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout" xmlns:bs="/bootstrap">
+  <st:documentation>
+    A details page that renders plugin data in a separate view.
+
+    <st:attribute name="it" use="required">
+      Owner of the page.
+    </st:attribute>
+    <st:attribute name="notitle" use="optional">
+      Hide the title on top of the page.
+    </st:attribute>
+  </st:documentation>
+
+
+  <bs:layout title="${it.displayName}" norefresh="true">
+
+    <st:include it="${it.owner}" page="sidepanel.jelly"/>
+
+    <l:main-panel>
+
+      <st:adjunct includes="io.jenkins.plugins.bootstrap4"/>
+
+      <div class="fluid-container">
+
+        <j:if test="${notitle == null}">
+          <h1>${title}</h1>
+        </j:if>
+
+        <d:invokeBody/>
+
+      </div>
+    </l:main-panel>
+  </bs:layout>
+
+</j:jelly>

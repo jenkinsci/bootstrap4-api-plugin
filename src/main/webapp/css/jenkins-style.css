@@ -45,13 +45,16 @@ body {
 /* ------------------------------------------------------------------------------------------------------------------- */
 /* Font awesome icons float right                                                                                      */
 /* ------------------------------------------------------------------------------------------------------------------- */
-
 .card {
     background-color: var(--background);
     color: var(--text-color);
+    font-size: inherit;
 }
 
+
 .card-title {
+    font-size: 1.2rem;
+    font-weight: 500;
     margin-bottom: 1.5rem;
 }
 
