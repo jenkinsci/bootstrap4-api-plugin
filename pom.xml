@@ -19,7 +19,7 @@
   <description>Provides Bootstrap 4 for Jenkins plugins.</description>
 
   <properties>
-    <revision>4.5.2-1</revision>
+    <revision>4.5.3-1</revision>
     <changelist>-SNAPSHOT</changelist>
     <bootstrap.version>4.5.3</bootstrap.version>
 
