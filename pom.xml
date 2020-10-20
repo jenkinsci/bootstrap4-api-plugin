@@ -12,7 +12,7 @@
   <groupId>io.jenkins.plugins</groupId>
   <packaging>hpi</packaging>
   <name>Bootstrap 4 API Plugin</name>
-  <version>4.5.2-2-SNAPSHOT</version>
+  <version>${revision}${changelist}</version>
 
   <url>https://github.com/jenkinsci/bootstrap4-api-plugin</url>
 
