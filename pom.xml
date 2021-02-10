@@ -27,7 +27,8 @@
 
     <jquery3-api.version>3.5.1-2</jquery3-api.version>
     <popper-api.version>1.16.1-1</popper-api.version>
-    <font-awesome-api.version>5.15.1-1</font-awesome-api.version>
+    <font-awesome-api.version>5.15.2-1</font-awesome-api.version>
+    <plugin-util-api.version>1.7.0</plugin-util-api.version>
 
     <commons.lang.version>3.9</commons.lang.version>
 
@@ -48,6 +49,15 @@
     </developer>
   </developers>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.jenkins.plugins</groupId>
+        <artifactId>plugin-util-api</artifactId>
+        <version>${plugin-util-api.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
   <dependencies>
     <dependency>
       <groupId>org.webjars</groupId>
