@@ -10,28 +10,8 @@ Use it like <st:adjunct includes="io.jenkins.plugins.bootstrap4"/>
   <st:adjunct includes="io.jenkins.plugins.jquery3"/>
   <st:adjunct includes="io.jenkins.plugins.popper"/>
 
-  <!--
-    Before Jenkins 2.235 the reset styles were found on the responsive-grid.css file that this layout skips.
-    If the version is <= 2.234, load the bootstrap-reboot.css file because otherwise there will be no CSS reset .
-  -->
-  <j:set var="versionParts" value="${h.version.split('\.')}" />
-  <j:set var="majorVersion" value="${versionParts[0]}" />
-  <j:set var="rawMinorVersion" value="${versionParts[1].split('-')}" />
-  <j:set var="minorVersion" value="${rawMinorVersion[0]}" />
-  <j:if test="${(majorVersion le 1) or (minorVersion le 234)}">
-    <link type="text/css" rel="stylesheet" href="${resURL}/plugin/bootstrap4-api/css/bootstrap-reboot.css"/>
-  </j:if>
-
   <link type="text/css" rel="stylesheet" href="${resURL}/plugin/bootstrap4-api/css/bootstrap-custom-build.css"/>
   <link type="text/css" rel="stylesheet" href="${resURL}/plugin/bootstrap4-api/css/jenkins-style.css"/>
-
-  <j:set var="versionParts" value="${h.version.split('\.',3)}" />
-  <j:set var="majorVersion" value="${versionParts[0]}" />
-  <j:set var="minorVersion" value="${versionParts[1]}" />
-
-  <j:if test="${majorVersion == 2 and minorVersion &lt; 222}">
-    <link type="text/css" rel="stylesheet" href="${resURL}/css/style.css"/>
-  </j:if>
 
   <script type="text/javascript" src="${resURL}/plugin/bootstrap4-api/js/bootstrap.min.js"/>
   <script type="text/javascript" src="${resURL}/plugin/bootstrap4-api/js/no-prototype.js"/>
