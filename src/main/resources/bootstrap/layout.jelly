@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 -->
 <?jelly escape-by-default='true'?>
-<j:jelly xmlns:d="jelly:define" xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout" xmlns:bs="/bootstrap">
+<j:jelly xmlns:d="jelly:define" xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout">
   <st:documentation>
     Outer-most tag for a normal (non-AJAX) HTML rendering.
     This is used with nested &lt;header>, &lt;side-panel>, and &lt;main-panel>
@@ -56,28 +56,7 @@ THE SOFTWARE.
     </st:attribute>
   </st:documentation>
 
-  <j:new var="h" className="hudson.Functions" /><!-- instead of JSP functions -->
-  ${h.initPageVariables(context)}
-
-  <j:set var="versionParts" value="${h.version.split('\.')}" />
-  <j:set var="majorVersion" value="${versionParts[0]}" />
-  <j:set var="rawMinorVersion" value="${versionParts[1].split('-')}" />
-  <j:set var="minorVersion" value="${rawMinorVersion[0]}" />
-  <j:choose>
-    <j:when test="${(majorVersion ge 2 and minorVersion ge 235) or majorVersion > 2}">
-      <l:layout title="${title}" permission="${permission}" type="${type}" nogrid="true">
-        <d:invokeBody/>
-      </l:layout>
-    </j:when>
-    <j:when test="${minorVersion ge 222}">
-      <bs:layout-post-2.222 title="${title}" permission="${permission}" type="${type}">
-        <d:invokeBody/>
-      </bs:layout-post-2.222>
-    </j:when>
-    <j:otherwise>
-      <bs:layout-pre-2.222 title="${title}" permission="${permission}" type="${type}">
-        <d:invokeBody/>
-      </bs:layout-pre-2.222>
-    </j:otherwise>
-  </j:choose>
+  <l:layout title="${title}" permission="${permission}" type="${type}" nogrid="true">
+    <d:invokeBody/>
+  </l:layout>
 </j:jelly>

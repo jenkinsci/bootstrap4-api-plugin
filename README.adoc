@@ -78,9 +78,9 @@ is shown in the following snippet:
 .index.jelly
 ----
 <?jelly escape-by-default='true'?>
-<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout" xmlns:bs="/bootstrap">
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout" >
 
-  <bs:layout title="${it.displayName}" norefresh="true"> <1>
+  <l:layout title="${it.displayName}" norefresh="true" nogrid="true"> <1>
     <st:include it="${it.owner}" page="sidepanel.jelly"/>
     <l:main-panel>
       <st:adjunct includes="io.jenkins.plugins.bootstrap4"/> <2>
@@ -103,11 +103,10 @@ is shown in the following snippet:
 
       </div>
     </l:main-panel>
-  </bs:layout>
+  </l:layout>
 </j:jelly>
 ----
-<1> Use a custom layout based on Bootstrap: since Jenkins core contains an old version of Bootstrap,
-we need to replace the standard layout.jelly file.
+<1> Enable the property `nogrid` so we can use the bootstrap built-in grid (and not the Jenkins grid). Otherwise the layout will break.
 <2> Import Bootstrap 4: Importing of JS and CSS components is done using the adjunct concept,
 which is the preferred way of referencing static resources within Jenkins' Stapler Web framework.
 <3> The whole view will be placed into a fluid container that fills up the whole screen (100% width).
