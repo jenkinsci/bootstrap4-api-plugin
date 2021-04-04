@@ -1,12 +1,12 @@
 {
   "name": "bootstrap4",
-  "version": "0.1.0",
+  "version": "4.6.0",
   "description": "Bootstrap 4 Jenkins Plugin",
   "directories": {
     "doc": "doc"
   },
   "dependencies": {
-    "bootstrap": "^4.5.3",
+    "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "remark-cli": "^6.0.1",
