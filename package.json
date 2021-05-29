@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "remark-cli": "^6.0.1",
     "remark-lint": "^8.0.0",
