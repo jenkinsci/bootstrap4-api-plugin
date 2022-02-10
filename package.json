@@ -14,7 +14,7 @@
     "remark-preset-lint-recommended": "^6.1.1"
   },
   "devDependencies": {
-    "node-sass": "^6.0.1"
+    "node-sass": "^7.0.0"
   },
   "scripts": {
     "build": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 etc -o target/bootstrap4-api/css",
