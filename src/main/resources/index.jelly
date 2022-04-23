@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+    Provides Bootstrap 4 for Jenkins plugins.
+</div>

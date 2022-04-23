@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.jvnet.hudson.plugins</groupId>
     <artifactId>analysis-pom</artifactId>
-    <version>5.13.0</version>
+    <version>5.24.0</version>
     <relativePath />
   </parent>
 
@@ -14,22 +14,17 @@
   <name>Bootstrap 4 API Plugin</name>
   <version>${revision}${changelist}</version>
 
-  <url>https://github.com/jenkinsci/bootstrap4-api-plugin</url>
+  <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
 
   <description>Provides Bootstrap 4 for Jenkins plugins.</description>
 
   <properties>
     <revision>4.6.0-4</revision>
     <changelist>-SNAPSHOT</changelist>
+    <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>
     <bootstrap.version>4.6.0</bootstrap.version>
 
     <module.name>${project.groupId}.bootstrap4</module.name>
-
-    <jquery3-api.version>3.6.0-2</jquery3-api.version>
-    <popper-api.version>1.16.1-2</popper-api.version>
-    <font-awesome-api.version>5.15.4-1</font-awesome-api.version>
-    <plugin-util-api.version>2.5.0</plugin-util-api.version>
-
   </properties>
 
   <licenses>
@@ -52,7 +47,6 @@
       <dependency>
         <groupId>io.jenkins.plugins</groupId>
         <artifactId>plugin-util-api</artifactId>
-        <version>${plugin-util-api.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -68,17 +62,14 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>popper-api</artifactId>
-      <version>${popper-api.version}</version>
     </dependency>
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>jquery3-api</artifactId>
-      <version>${jquery3-api.version}</version>
     </dependency>
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>font-awesome-api</artifactId>
-      <version>${font-awesome-api.version}</version>
     </dependency>
 
   </dependencies>
@@ -148,9 +139,9 @@
   </build>
 
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
-    <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+    <connection>scm:git:https://github.com/${gitHubRepo}.git</connection>
+    <developerConnection>scm:git:git@github.com:${gitHubRepo}.git</developerConnection>
+    <url>https://github.com/${gitHubRepo}</url>
     <tag>${scmTag}</tag>
   </scm>
 
