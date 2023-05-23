@@ -3,4 +3,4 @@
 
 = Bootstrap 4 Jenkins Plugin
 
-This plugin reached end-of-life. Please use the new [Bootstrap 5 Jenkins Plugin](https://plugins.jenkins.io/bootstrap5/).
+This plugin reached end-of-life. Please use the new https://plugins.jenkins.io/bootstrap5/:[Bootstrap 5 Jenkins Plugin].
